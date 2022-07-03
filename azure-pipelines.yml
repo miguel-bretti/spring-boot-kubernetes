@@ -21,6 +21,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
+    jdkVersionOption: default
     mavenVersionOption: 'Default'
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
