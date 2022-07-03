@@ -16,3 +16,5 @@ steps:
     scannerMode: 'Other'
 - task: SonarCloudAnalyze@1
 - task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
