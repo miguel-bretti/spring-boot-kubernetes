@@ -15,10 +15,10 @@ steps:
     organization: 'mbrettip'
     scannerMode: 'Other'
 - task: SonarCloudAnalyze@1
-- task: SonarCloudPublish@1
-  inputs:
-    pollingTimeoutSec: '300'
 - task: sonarcloud-buildbreaker@2
   inputs:
     SonarCloud: 'Sonar'
     organization: 'mbrettip'
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
