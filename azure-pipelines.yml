@@ -6,7 +6,7 @@
 trigger:
 - master
 
-pool: PC
+pool: Azure Pipelines
 
 steps:
 - task: SonarCloudPrepare@1
