@@ -10,7 +10,7 @@ pool: PC
 
 steps:
 - task: SonarCloudPrepare@1
-inputs:
+  inputs:
     SonarCloud: 'Sonar'
     organization: 'mbrettip'
     scannerMode: 'Other'
