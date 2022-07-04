@@ -49,8 +49,8 @@ stages:
           SonarCloud: 'Sonar'
           organization: 'mbrettip'
 
-#      - task: dependency-check-build-task@6
-#        inputs:
-#          projectName: 'spring-boot-kubernetes'
-#          scanPath: '**/*.jar'
-#          format: 'HTML'
+      - task: dependency-check-build-task@6
+        inputs:
+          projectName: 'spring-boot-kubernetes'
+          scanPath: '**/*.jar'
+          format: 'HTML'
