@@ -24,6 +24,8 @@ stages:
         inputs:
           SonarCloud: 'Sonar'
           organization: 'mbrettip'
+          projectKey: 'miguel-bretti_spring-boot-kubernetes'
+          projectName: 'mbrettip'
         displayName: 'Preparing Sonarqube Environment'
     
       - task: Gradle@3
