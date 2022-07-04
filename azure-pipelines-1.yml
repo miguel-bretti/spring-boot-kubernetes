@@ -31,11 +31,13 @@ stages:
       - task: Gradle@3
         inputs:
           gradleWrapperFile: 'gradlew'
-          tasks: "sonarqube"
+          tasks: 'sonarqube'
+          publishJUnitResults: false
           javaHomeOption: 'JDKVersion'
           sonarQubeRunAnalysis: true
           sqGradlePluginVersionChoice: 'specify'
           sonarQubeGradlePluginVersion: '3.3'
+          spotBugsAnalysis: false
         displayName: 'Analyze current Branch'
   
       - task: SonarCloudPublish@1
