@@ -6,8 +6,7 @@
 trigger:
 - master
 
-pool:
-  vmImage: ubuntu-latest
+pool: PC
 
 steps:
 - task: dependency-check-build-task@6
