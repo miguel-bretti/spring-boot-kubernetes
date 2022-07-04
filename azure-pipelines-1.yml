@@ -11,8 +11,7 @@ pool: PC
 stages:
 
 
-- stage: Review_SAST
-  #dependsOn: Build
+- stage: SAST
   
   jobs:
   - job: sonar
