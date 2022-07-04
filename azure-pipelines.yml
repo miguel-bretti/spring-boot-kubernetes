@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool: PC
+stages:
 
+- stage: SAST
 steps:
 - task: SonarCloudPrepare@1
   inputs:
