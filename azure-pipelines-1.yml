@@ -7,8 +7,6 @@ trigger:
 - master
 
 pool: PC
-variables:
-- group: sonarcloud-properties
   
 stages:
 
