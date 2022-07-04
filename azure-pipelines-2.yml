@@ -11,7 +11,8 @@ pool:
 
 steps:
 - task: dependency-check-build-task@6
-        inputs:
-          projectName: 'spring-boot-kubernetes'
-          scanPath: '**/*.jar'
-          format: 'HTML'
+  inputs:
+    projectName: 'Spring-Boot'
+    scanPath: '**/*.jar'
+    format: 'HTML'
+
