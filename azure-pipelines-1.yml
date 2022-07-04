@@ -17,7 +17,7 @@ stages:
   - job: sonar
     workspace:
       clean: all
-    displayName:  Code Review
+    displayName:  Revisión de Código
     steps:
       - task: SonarCloudPrepare@1
         inputs:
