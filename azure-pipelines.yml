@@ -36,7 +36,7 @@ stages:
          codeCoverageToolOption: JaCoCo
          javaHomeOption: 'JDKVersion'
          jdkVersionOption: '1.11'
-        mavenVersionOption: 'Default'
+         mavenVersionOption: 'Default'
   
       - task: SonarCloudPublish@1
         inputs:
