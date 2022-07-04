@@ -8,9 +8,9 @@ trigger:
 
 pool: PC
 
-   steps:
-   - task: SonarCloudPrepare@1
-  inputs:
+steps:
+- task: SonarCloudPrepare@1
+inputs:
     SonarCloud: 'Sonar'
     organization: 'mbrettip'
     scannerMode: 'Other'
