@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Slf4j
 public class K8SApplication implements CommandLineRunner {
 
+    String password = 123456;
 
     @Autowired
     UserConfig userConfig;
