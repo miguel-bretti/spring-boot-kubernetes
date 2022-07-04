@@ -14,7 +14,7 @@ inputs:
     SonarCloud: 'Sonar'
     organization: 'mbrettip'
     scannerMode: 'Other'
-  - task: Maven@3
+- task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'clean verify sonar:sonar'
@@ -23,11 +23,11 @@ inputs:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: default
     mavenVersionOption: 'Default'
-  - task: SonarCloudAnalyze@1
-  - task: sonarcloud-buildbreaker@2
+- task: SonarCloudAnalyze@1
+- task: sonarcloud-buildbreaker@2
   inputs:
     SonarCloud: 'Sonar'
     organization: 'mbrettip'
-  - task: SonarCloudPublish@1
+- task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
